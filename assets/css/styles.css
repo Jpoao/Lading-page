@@ -109,4 +109,21 @@ a {
 .nav-bar a {
   padding: 1.8rem;
   font-size: 18px;
+  position: relative;
+}
+
+.nav-bar a::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0px;
+  height: 2px;
+  background-color: crimson;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-bar a:hover::after{
+  width: 50%;
+  left: 25%;
 }
