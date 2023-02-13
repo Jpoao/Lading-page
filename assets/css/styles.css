@@ -53,6 +53,11 @@ h6 {
   font-size: 3.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .main-bg {
   background-image: url('../img/main-bg.svg');
   background-size: cover;
@@ -66,10 +71,42 @@ h6 {
 
 .main-content {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: var(--gap);
 }
 
 .section {
   min-height: 100vh;
+}
+
+.menu {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ background-color: var(--white-color);
+ height: 6rem;
+ display: flex;
+}
+
+.menu-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 120px;
+  font-size: 23px;
+}
+
+.nav-bar {
+  margin-right: 90px;
+}
+
+.nav-bar a {
+  padding: 1.8rem;
+  font-size: 18px;
 }
